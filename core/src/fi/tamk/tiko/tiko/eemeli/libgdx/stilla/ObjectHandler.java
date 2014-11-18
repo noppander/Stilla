@@ -10,7 +10,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class ObjectHandler {
 	
-	private String difficulty;
+	private String difficulty = "easy";
 	
 	private int currentScore;
 	
@@ -44,7 +44,7 @@ public class ObjectHandler {
 		private int randomObject = 0;
 		
 		// The height where droplet is falling. The length of the level.
-		private int height;
+		private int height = 3000;
 		private int lives;
 		
 		// The maximum count of the objects in randomized array.
@@ -163,7 +163,7 @@ public class ObjectHandler {
 	/** 
 	 * Filling the printable array with objects.
 	 */
-	private void fillObjectArray() {
+	public void fillObjectArray() {
 		
 		if (difficulty.equals("easy")) {
 			easyObjects ();
@@ -284,8 +284,9 @@ public class ObjectHandler {
 								counter2++;
 						}
 						
-						object_array[i].setPosition(0, 500);
+						object_array[i].setPosition(0, -500);
 					}
+				Gdx.app.log("ObjectHandler", "Easy objects DONE!");
 	}
 	
 	/**
@@ -412,7 +413,7 @@ public class ObjectHandler {
 								counter2++;
 						}
 						
-						object_array[i].setPosition(0, 500);
+						object_array[i].setPosition(0, -500);
 					}
 		
 	}
@@ -571,7 +572,7 @@ public class ObjectHandler {
 								counter2++;
 						}
 						
-						object_array[i].setPosition(0, 500);
+						object_array[i].setPosition(0, -500);
 					}
 		
 	}
@@ -594,7 +595,7 @@ public class ObjectHandler {
 				
 					case 0:
 						if (number != 0) {
-							object_array[objectIndex++].setPosition(CLOUD_LANE_1, 320);
+							object_array[objectIndex++].setPosition(CLOUD_LANE_1, -45);
 							number = 0;
 							assignOk = true;
 							break;
@@ -602,7 +603,7 @@ public class ObjectHandler {
 						break;
 					case 1:
 						if (number != 1) {
-							object_array[objectIndex++].setPosition(CLOUD_LANE_2, 320);
+							object_array[objectIndex++].setPosition(CLOUD_LANE_2, -45);
 							number = 1;
 							assignOk = true;
 							break;
@@ -610,7 +611,7 @@ public class ObjectHandler {
 						break;
 					case 2:
 						if (number != 2) {
-							object_array[objectIndex++].setPosition(CLOUD_LANE_3, 320);
+							object_array[objectIndex++].setPosition(CLOUD_LANE_3, -45);
 							number = 2;
 							assignOk = true;
 							break;
@@ -618,79 +619,82 @@ public class ObjectHandler {
 						break;
 					case 3:
 						if (number != 3) {
-							object_array[objectIndex++].setPosition(CLOUD_LANE_4, 320);
+							object_array[objectIndex++].setPosition(CLOUD_LANE_4, -45);
 							number = 3;
 							assignOk = true;
 							break;
 						}
 						break;	
 				}
+				Gdx.app.log("ObjectHandler;", "Object spawned");
+
 			}
 			
 			// Resets the counter.
 			spawnCounter = 0;
 			
-			// DEFINES THE SPAWNING SPEED.
-			if (difficulty.equals("easy")) {
-				
-				if (height > 1500) {
-					idleTime = rand(10,30);
-				} else if (height < 1500) {
-					idleTime = rand(8,25);
-				}
-				
-			} else if (difficulty.equals("medium")) {
-				
-				if (height > 2500) {
-					idleTime = rand(10,30);
-				} else if (height > 1000) {
-					idleTime = rand(8,25);
-				} else if (height < 1000) {
-					idleTime = rand(5,15);
-				}
-				
-			} else if (difficulty.equals("hard")) {
-				
-				if (height > 4000) {
-					idleTime = rand(10,30);
-				} else if (height > 2000) {
-					idleTime = rand(8,25);
-				} else if (height < 2000) {
-					idleTime = rand(5,15);
-				}
-				
-			} else if (difficulty.equals("arcade")) {
-				idleTime = 15;
-				
-				if (currentScore > 1000 && currentScore < 2000 ) {
-					idleTime = idleTime - 1;
-				} else if (currentScore > 2000 && currentScore < 3000 ) {
-					idleTime = idleTime - 2;
-				} else if (currentScore > 3000 && currentScore < 4000 ) {
-					idleTime = idleTime - 3;
-				} else if (currentScore > 4000 && currentScore < 5000 ) {
-					idleTime = idleTime - 4;
-				} else if (currentScore > 5000 && currentScore < 6000 ) {
-					idleTime = idleTime - 5;
-				} else if (currentScore > 6000 && currentScore < 7000 ) {
-					idleTime = idleTime - 6;
-				} else if (currentScore > 7000 && currentScore < 8000 ) {
-					idleTime = idleTime - 7;
-				} else if (currentScore > 8000 && currentScore < 9000 ) {
-					idleTime = idleTime - 8;
-				} else if (currentScore > 9000) {
-					idleTime = idleTime - 9;
-				}
-		
-			}
-				
-			if (balloonCounter > 0) {
-				if (arcadeOn) {
-					idleTime -= 5;
-				} else {
-					idleTime = idleTime/2;
-				}
-			}
+//			// DEFINES THE SPAWNING SPEED.
+//			if (difficulty.equals("easy")) {
+//				
+//				if (height > 1500) {
+//					idleTime = rand(10,30);
+//				} else if (height < 1500) {
+//					idleTime = rand(8,25);
+//				}
+//				
+//			} else if (difficulty.equals("medium")) {
+//				
+//				if (height > 2500) {
+//					idleTime = rand(10,30);
+//				} else if (height > 1000) {
+//					idleTime = rand(8,25);
+//				} else if (height < 1000) {
+//					idleTime = rand(5,15);
+//				}
+//				
+//			} else if (difficulty.equals("hard")) {
+//				
+//				if (height > 4000) {
+//					idleTime = rand(10,30);
+//				} else if (height > 2000) {
+//					idleTime = rand(8,25);
+//				} else if (height < 2000) {
+//					idleTime = rand(5,15);
+//				}
+//				
+//			} else if (difficulty.equals("arcade")) {
+//				idleTime = 15;
+//				
+//				if (currentScore > 1000 && currentScore < 2000 ) {
+//					idleTime = idleTime - 1;
+//				} else if (currentScore > 2000 && currentScore < 3000 ) {
+//					idleTime = idleTime - 2;
+//				} else if (currentScore > 3000 && currentScore < 4000 ) {
+//					idleTime = idleTime - 3;
+//				} else if (currentScore > 4000 && currentScore < 5000 ) {
+//					idleTime = idleTime - 4;
+//				} else if (currentScore > 5000 && currentScore < 6000 ) {
+//					idleTime = idleTime - 5;
+//				} else if (currentScore > 6000 && currentScore < 7000 ) {
+//					idleTime = idleTime - 6;
+//				} else if (currentScore > 7000 && currentScore < 8000 ) {
+//					idleTime = idleTime - 7;
+//				} else if (currentScore > 8000 && currentScore < 9000 ) {
+//					idleTime = idleTime - 8;
+//				} else if (currentScore > 9000) {
+//					idleTime = idleTime - 9;
+//				}
+//		
+//			}
+//				
+//			if (balloonCounter > 0) {
+//				if (arcadeOn) {
+//					idleTime -= 5;
+//				} else {
+//					idleTime = idleTime/2;
+//				}
+//			}
+
 						
 //			if (object_array[objectIndex + 1]. == false) {
 //				object_array[objectIndex + 1].setVisible(true);
@@ -705,6 +709,7 @@ public class ObjectHandler {
 		spawnCounter++;
 		
 		// Debug
+		Gdx.app.log("ObjectHandler", "Spawncounter: " + spawnCounter);
 //		Debug.printInfo("Idle time" + idleTime, 1);
 //		Debug.printInfo("Spawn counter" + spawnCounter, 1);
 	}
@@ -715,7 +720,7 @@ public class ObjectHandler {
     private void updateVisibles() {
         
         // check if next visible object has entered the screen
-        if (!noNextVisibles && object_array[nextVisible].getY() < 341) {
+        if (!noNextVisibles && object_array[nextVisible].getY() > -50) {
 
             if (++nextVisible == maxObjects) {
 
@@ -726,7 +731,7 @@ public class ObjectHandler {
         
         // check if last visible object has left the screen
         if (!noMoreVisibles && object_array[lastVisible].getY() +
-        		object_array[lastVisible].getHeight() < -10) {
+        		object_array[lastVisible].getHeight() > 360) {
             
             if (++lastVisible == maxObjects) {
 
@@ -749,7 +754,12 @@ public class ObjectHandler {
 			float temp = object_array[i].getY();
 			
 			// Move object
-			object_array[i].setCenterY(temp += object_speed[i] + heightSpeed);
+			//object_array[i].setCenterY(temp += object_speed[i] + heightSpeed);
+			
+			// Move object with speed of: 1
+			object_array[i].setPosition(object_array[i].getX(), object_array[i].getY() + 0.8f);
+			
+			Gdx.app.log("ObjectHandler", "Objects position with ID: " + i + " And position: " + temp);
 			
 			object_array[i].draw(batch);
 		
@@ -937,19 +947,19 @@ public class ObjectHandler {
 		/**
 		 * Initializes the sprites and puts them to their default place
 		 */
-		private void initializeSprites() {
+		public void initializeSprites() {
 					
-					myrkkypilvi_img = new Texture(Gdx.files.internal("Clouds/myrkkypilvi.png"));
-					
-					greenscreen_spr = new Sprite(new Texture(Gdx.files.internal("Objects/greenscreen92x92.png")));
+				myrkkypilvi_img = new Texture(Gdx.files.internal("Clouds/myrkkypilvi.png"));
+				
+				greenscreen_spr = new Sprite(new Texture(Gdx.files.internal("Objects/greenscreen92x92.png")));
 
-					
-					myrkkypilvi_img = new Texture(Gdx.files.internal("Clouds/myrkkypilvi.png"));
-					icecloud_img = new Texture(Gdx.files.internal("Clouds/icecloud.png"));
-					
-					whitescreen_spr = new Sprite(new Texture(Gdx.files.internal("Objects/whitescreen92x92.png")));
-					greenscreen_spr = new Sprite(new Texture(Gdx.files.internal("Objects/greenscreen92x92.png")));
-					
+				
+				myrkkypilvi_img = new Texture(Gdx.files.internal("Clouds/myrkkypilvi.png"));
+				icecloud_img = new Texture(Gdx.files.internal("Clouds/icecloud.png"));
+				
+				whitescreen_spr = new Sprite(new Texture(Gdx.files.internal("Objects/whitescreen92x92.png")));
+				greenscreen_spr = new Sprite(new Texture(Gdx.files.internal("Objects/greenscreen92x92.png")));
+				
 //					whitescreen_spr.defineReferencePixel(whitescreen_spr.getWidth()/2, whitescreen_spr.getHeight()/2);
 //					greenscreen_spr.defineReferencePixel(greenscreen_spr.getWidth()/2, greenscreen_spr.getHeight()/2);
 				
@@ -976,14 +986,13 @@ public class ObjectHandler {
 				// Loading Backgrounds
 
 				// Contamination bar and indicator
-				contaminationBar_spr = new Sprite (new Texture(Gdx.files.internal("Objects/contaminationBar.png")));
-				indicator_spr = new Sprite (new Texture(Gdx.files.internal("Objects/pointer.png")));
+				//contaminationBar_spr = new Sprite (new Texture(Gdx.files.internal("Objects/contaminationBar.png")));
+				//indicator_spr = new Sprite (new Texture(Gdx.files.internal("Objects/pointer.png")));
 						
 			
 			// Defines the sprites and animation frames
 
 			// For droplets
-			droplet_spr = new Sprite(droplet_img, 96/4, 48);
 			blackdroplet_spr = new Sprite(blackdroplet_img, 40, 48);
 			snowflake_spr = new Sprite(snowflake_img, 32, 32);
 			
@@ -1017,5 +1026,15 @@ public class ObjectHandler {
 //			justwell_spr.setPosition(0, 280);
 			
 			//System.out.println("GAME: Sprites initialized.");
+		}
+		
+		public void RunTheGame() {
+			
+			// Checks the objects on the screen
+			updateVisibles();
+			
+			// Places the sprites on the canvas
+			putObjectOnScreen();
+		
 		}
 }

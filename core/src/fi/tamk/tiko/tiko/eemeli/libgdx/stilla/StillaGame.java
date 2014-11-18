@@ -33,6 +33,8 @@ public class StillaGame extends Game {
 	private Player player;
 	
 	private BGHandler bghandler;
+	
+	private ObjectHandler objecthandler;
 
 
 	
@@ -63,7 +65,13 @@ public class StillaGame extends Game {
 		// New BGHandler
 		bghandler = new BGHandler(worldWidth, worldHeight);
 		
+		// New objecthandler
+		objecthandler = new ObjectHandler();
 		
+		// Initializing the sprites.
+		objecthandler.initializeSprites();
+		
+		objecthandler.fillObjectArray();
 		
 		
 	}
@@ -88,7 +96,14 @@ public class StillaGame extends Game {
 		
 		bghandler.moveBackground(1f);
 		bghandler.drawBackground(batch);
+		
 		player.DrawMySprite(batch, delta, screenLeftSide, screenRightSide, gameIsOn);
+		
+		objecthandler.RunTheGame();
+		
+		objecthandler.drawSprites(batch);
+		
+		
 		
 		// Ends the batch
 		batch.end();
