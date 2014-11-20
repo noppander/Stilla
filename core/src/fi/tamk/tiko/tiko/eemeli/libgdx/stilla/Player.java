@@ -151,7 +151,7 @@ import com.badlogic.gdx.utils.viewport.StretchViewport;
 		
 		
 		public void DrawMySprite(SpriteBatch batch, float delta, float screenLeftSide, 
-				float screenRightSide, boolean gameIsOn) {
+				float screenRightSide) {
 			
 			debugforfun();
 			

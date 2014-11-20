@@ -1,24 +1,9 @@
 package fi.tamk.tiko.tiko.eemeli.libgdx.stilla;
 
-public class GameObject {
-
-	private String objectType;
+public interface GameObject {
 	
-	private float posX;
-	private float posY;
-	
-	private float speed;
+	public abstract void update();
+	public abstract boolean checkCollision();
 	
 	
-	public GameObject(String a) {
-		
-		objectType = a;
-		
-		if (objectType.equals("normalCloud")) {
-			
-			
-		}
-		
-		
-	}
 }

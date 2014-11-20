@@ -24,8 +24,8 @@ public class StillaGame extends Game {
 	public float worldHeight = 320;
 	
 	// Left and right side of the screen used to define movable area
-	private float screenLeftSide = 0;
-	private float screenRightSide = 240;
+	public float screenLeftSide = 0;
+	public float screenRightSide = 240;
 	
 	// Boolean defining that the game is running.
 	private boolean gameIsOn = true;
@@ -46,9 +46,6 @@ public class StillaGame extends Game {
 		
 		// Sets the camera to desired resolution. In this case 240x320.
 		camera.setToOrtho(false, worldWidth, worldHeight);
-		
-		// Centers the position of the camera so 0 will be at left bot corner.
-		camera.position.set(worldWidth / 2, worldHeight / 2, 0);
 		
 		// Updates the camera
 		camera.update();
@@ -73,40 +70,19 @@ public class StillaGame extends Game {
 		
 		objecthandler.fillObjectArray();
 		
+		this.setScreen(new GameScreen(this, batch, camera));
+		
 		
 	}
 
 	@Override
 	public void render () {
-		
-		// Background color.
-		Gdx.gl.glClearColor(1, 0, 0, 1);
-		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		
-		// Updating the camera
-		camera.update();
-		batch.setProjectionMatrix(camera.combined);
-		
-		// Saving delta time to a variable
-		float delta = Gdx.graphics.getDeltaTime();
-		
-		
-		// Begins the batch
-		batch.begin();
-		
-		bghandler.moveBackground(1f);
-		bghandler.drawBackground(batch);
-		
-		player.DrawMySprite(batch, delta, screenLeftSide, screenRightSide, gameIsOn);
-		
-		objecthandler.RunTheGame();
-		
-		objecthandler.drawSprites(batch);
+		super.render();
 		
 		
 		
-		// Ends the batch
-		batch.end();
+		
+		
 	}
 	
 	@Override

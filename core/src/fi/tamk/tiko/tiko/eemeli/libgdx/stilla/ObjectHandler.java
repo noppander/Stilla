@@ -709,7 +709,7 @@ public class ObjectHandler {
 		spawnCounter++;
 		
 		// Debug
-		Gdx.app.log("ObjectHandler", "Spawncounter: " + spawnCounter);
+		//Gdx.app.log("ObjectHandler", "Spawncounter: " + spawnCounter);
 //		Debug.printInfo("Idle time" + idleTime, 1);
 //		Debug.printInfo("Spawn counter" + spawnCounter, 1);
 	}
@@ -759,7 +759,7 @@ public class ObjectHandler {
 			// Move object with speed of: 1
 			object_array[i].setPosition(object_array[i].getX(), object_array[i].getY() + 0.8f);
 			
-			Gdx.app.log("ObjectHandler", "Objects position with ID: " + i + " And position: " + temp);
+			//Gdx.app.log("ObjectHandler", "Objects position with ID: " + i + " And position: " + temp);
 			
 			object_array[i].draw(batch);
 		
