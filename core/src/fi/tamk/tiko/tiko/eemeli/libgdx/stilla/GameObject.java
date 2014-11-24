@@ -4,6 +4,7 @@ public interface GameObject {
 	
 	public abstract void update();
 	public abstract boolean checkCollision();
+	public abstract void DrawMySprite();
 	
 	
 }
