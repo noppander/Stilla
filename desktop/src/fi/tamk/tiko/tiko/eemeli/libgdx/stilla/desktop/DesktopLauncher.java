@@ -2,7 +2,8 @@ package fi.tamk.tiko.tiko.eemeli.libgdx.stilla.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import fi.tamk.tiko.tiko.eemeli.libgdx.stilla.StillaGame;
+
+import fi.tamk.tiko.eemeli.libgdx.stilla.StillaGame;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {

@@ -1,0 +1,44 @@
+Music file: gameMusic.mp3
+
+Song: Popcorn blast
+
+Artist: Azureflux
+
+Web Page: http://freemusicarchive.org/music/Azureflux/
+
+
+
+
+Music file: gameMusic2.mp3
+
+Song: Expedition
+
+Artist: Azureflux
+
+Web Page: http://freemusicarchive.org/music/Azureflux/
+
+
+
+
+Music file: gameMusic3.mp3
+
+Song: Eat my chips
+
+Artist: Azureflux
+
+Web Page: http://freemusicarchive.org/music/Azureflux/
+
+
+
+Music file: menuMusic.mp3
+
+Song: Rainbow ride
+
+Artist: Azureflux
+
+Web Page: http://freemusicarchive.org/music/Azureflux/
+
+
+
+
+

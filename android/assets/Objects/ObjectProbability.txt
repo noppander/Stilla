@@ -1,0 +1,8 @@
+OBJECT TYPE		EASY		MEDIUM		HARD
+Normal Cloud		40%		30%		30%
+Thunder Cloud		35%		10%		10%
+Water Cloud		10%		10%		10%
+Star			10%		10%		10%
+Balloon			5%		10%		10%		
+Poison Cloud		- 		30%		20%
+Ice Cloud			-		-		10%

@@ -1,0 +1,573 @@
+
+StillaAtlas.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Achievements/achievements
+  rotate: false
+  xy: 1558, 1408
+  size: 133, 28
+  orig: 133, 28
+  offset: 0, 0
+  index: -1
+Backgrounds/level1Background
+  rotate: false
+  xy: 2, 772
+  size: 240, 640
+  orig: 240, 640
+  offset: 0, 0
+  index: -1
+Backgrounds/level1Loop
+  rotate: false
+  xy: 2, 130
+  size: 240, 640
+  orig: 240, 640
+  offset: 0, 0
+  index: -1
+Backgrounds/level1Loop2
+  rotate: false
+  xy: 244, 772
+  size: 240, 640
+  orig: 240, 640
+  offset: 0, 0
+  index: -1
+Backgrounds/level2Background
+  rotate: false
+  xy: 244, 130
+  size: 240, 640
+  orig: 240, 640
+  offset: 0, 0
+  index: -1
+Backgrounds/level2Loop
+  rotate: false
+  xy: 486, 772
+  size: 240, 640
+  orig: 240, 640
+  offset: 0, 0
+  index: -1
+Backgrounds/level3Background
+  rotate: false
+  xy: 486, 130
+  size: 240, 640
+  orig: 240, 640
+  offset: 0, 0
+  index: -1
+Backgrounds/level3Loop
+  rotate: false
+  xy: 728, 772
+  size: 240, 640
+  orig: 240, 640
+  offset: 0, 0
+  index: -1
+Clouds/cloud
+  rotate: false
+  xy: 1387, 96
+  size: 52, 32
+  orig: 52, 32
+  offset: 0, 0
+  index: -1
+Clouds/icecloud
+  rotate: false
+  xy: 1486, 1800
+  size: 355, 58
+  orig: 355, 58
+  offset: 0, 0
+  index: -1
+Clouds/normalcloud
+  rotate: false
+  xy: 1486, 1760
+  size: 348, 38
+  orig: 348, 38
+  offset: 0, 0
+  index: -1
+Clouds/poisoncloud
+  rotate: false
+  xy: 409, 86
+  size: 372, 42
+  orig: 372, 42
+  offset: 0, 0
+  index: -1
+Clouds/thundercloud
+  rotate: false
+  xy: 2, 67
+  size: 405, 61
+  orig: 405, 61
+  offset: 0, 0
+  index: -1
+Clouds/watercloud
+  rotate: false
+  xy: 2, 8
+  size: 372, 57
+  orig: 372, 57
+  offset: 0, 0
+  index: -1
+Droplets/droplet
+  rotate: false
+  xy: 1696, 526
+  size: 96, 48
+  orig: 96, 48
+  offset: 0, 0
+  index: -1
+Droplets/droplet2
+  rotate: false
+  xy: 1696, 476
+  size: 96, 48
+  orig: 96, 48
+  offset: 0, 0
+  index: -1
+Droplets/droplet3
+  rotate: false
+  xy: 1712, 395
+  size: 96, 48
+  orig: 96, 48
+  offset: 0, 0
+  index: -1
+Droplets/droplet4
+  rotate: false
+  xy: 1712, 345
+  size: 96, 48
+  orig: 96, 48
+  offset: 0, 0
+  index: -1
+GameOverScreen/background
+  rotate: false
+  xy: 1316, 1408
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1
+GameOverScreen/jumpingStilla
+  rotate: false
+  xy: 1028, 1730
+  size: 456, 128
+  orig: 456, 128
+  offset: 0, 0
+  index: -1
+GameOverScreen/waterlevel
+  rotate: false
+  xy: 1212, 1086
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1
+Menu/AboutPage
+  rotate: false
+  xy: 1074, 1408
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1
+Menu/BG/background1
+  rotate: false
+  xy: 1558, 1438
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1
+Menu/BG/background2
+  rotate: false
+  xy: 970, 1086
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1
+Menu/BG/background3
+  rotate: false
+  xy: 970, 764
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1
+Menu/Buttons/about
+  rotate: false
+  xy: 1584, 135
+  size: 102, 61
+  orig: 102, 61
+  offset: 0, 0
+  index: -1
+Menu/Buttons/achievements
+  rotate: false
+  xy: 1248, 17
+  size: 102, 61
+  orig: 102, 61
+  offset: 0, 0
+  index: -1
+Menu/Buttons/arcademode
+  rotate: false
+  xy: 1696, 765
+  size: 102, 61
+  orig: 102, 61
+  offset: 0, 0
+  index: -1
+Menu/Buttons/options
+  rotate: false
+  xy: 1696, 639
+  size: 102, 61
+  orig: 102, 61
+  offset: 0, 0
+  index: -1
+Menu/Buttons/storymode
+  rotate: false
+  xy: 1696, 576
+  size: 102, 61
+  orig: 102, 61
+  offset: 0, 0
+  index: -1
+Menu/CharacterBox1
+  rotate: false
+  xy: 376, 34
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+Menu/CharacterBox2
+  rotate: false
+  xy: 1352, 47
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+Menu/CharacterBox3
+  rotate: false
+  xy: 1767, 1405
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+Menu/CharacterBox4
+  rotate: false
+  xy: 1800, 1727
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+Menu/WellStates/wellState0
+  rotate: false
+  xy: 970, 442
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1
+Menu/WellStates/wellState1
+  rotate: false
+  xy: 1212, 764
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1
+Menu/WellStates/wellState2
+  rotate: false
+  xy: 1212, 442
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1
+Menu/WellStates/wellState3
+  rotate: false
+  xy: 1454, 1086
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1
+Menu/WellStates/wellState4
+  rotate: false
+  xy: 1454, 764
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1
+Menu/WellStates/wellState5
+  rotate: false
+  xy: 1454, 442
+  size: 240, 320
+  orig: 240, 320
+  offset: 0, 0
+  index: -1
+Menu/arrow_left
+  rotate: false
+  xy: 2008, 2013
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+Menu/arrow_right
+  rotate: false
+  xy: 1671, 277
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+Menu/charSelectButtons
+  rotate: false
+  xy: 1103, 44
+  size: 143, 34
+  orig: 143, 34
+  offset: 0, 0
+  index: -1
+Menu/charSelectDroplet
+  rotate: false
+  xy: 1103, 2
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+Menu/charSelectUnknown
+  rotate: false
+  xy: 1145, 2
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+Menu/chosenCharacter
+  rotate: false
+  xy: 1712, 312
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+Menu/controls
+  rotate: false
+  xy: 1696, 445
+  size: 101, 29
+  orig: 101, 29
+  offset: 0, 0
+  index: -1
+Menu/gameover
+  rotate: false
+  xy: 832, 1745
+  size: 181, 43
+  orig: 181, 43
+  offset: 0, 0
+  index: -1
+GameOverScreen/title
+  rotate: false
+  xy: 832, 1745
+  size: 181, 43
+  orig: 181, 43
+  offset: 0, 0
+  index: -1
+Menu/kursori
+  rotate: false
+  xy: 1693, 1435
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+Menu/level1
+  rotate: false
+  xy: 1696, 828
+  size: 66, 200
+  orig: 66, 200
+  offset: 0, 0
+  index: -1
+Menu/level2
+  rotate: false
+  xy: 1696, 1234
+  size: 69, 202
+  orig: 69, 202
+  offset: 0, 0
+  index: -1
+Menu/level3
+  rotate: false
+  xy: 1696, 1030
+  size: 69, 202
+  orig: 69, 202
+  offset: 0, 0
+  index: -1
+Menu/levelselect
+  rotate: false
+  xy: 409, 34
+  size: 199, 50
+  orig: 199, 50
+  offset: 0, 0
+  index: -1
+Menu/lockedLevel
+  rotate: false
+  xy: 1858, 1851
+  size: 148, 195
+  orig: 148, 195
+  offset: 0, 0
+  index: -1
+Menu/mainmenu
+  rotate: false
+  xy: 1454, 262
+  size: 215, 48
+  orig: 215, 48
+  offset: 0, 0
+  index: -1
+Menu/menucloud
+  rotate: false
+  xy: 988, 26
+  size: 113, 68
+  orig: 113, 68
+  offset: 0, 0
+  index: -1
+Menu/menucloud_active
+  rotate: false
+  xy: 1584, 198
+  size: 103, 62
+  orig: 103, 62
+  offset: 0, 0
+  index: -1
+Menu/menucloud_small
+  rotate: false
+  xy: 1696, 702
+  size: 102, 61
+  orig: 102, 61
+  offset: 0, 0
+  index: -1
+Menu/music
+  rotate: false
+  xy: 1486, 1730
+  size: 68, 28
+  orig: 68, 28
+  offset: 0, 0
+  index: -1
+Menu/options
+  rotate: false
+  xy: 1843, 1803
+  size: 152, 46
+  orig: 152, 46
+  offset: 0, 0
+  index: -1
+Menu/well
+  rotate: false
+  xy: 1212, 130
+  size: 240, 310
+  orig: 240, 310
+  offset: 0, 0
+  index: -1
+Objects/balloon
+  rotate: false
+  xy: 610, 16
+  size: 182, 68
+  orig: 182, 68
+  offset: 0, 0
+  index: -1
+Objects/blackdroplet40x48
+  rotate: false
+  xy: 1105, 80
+  size: 280, 48
+  orig: 280, 48
+  offset: 0, 0
+  index: -1
+Objects/blackscreen92x92
+  rotate: false
+  xy: 2, 1696
+  size: 828, 92
+  orig: 828, 92
+  offset: 0, 0
+  index: -1
+Objects/bluescreen92x92
+  rotate: false
+  xy: 1028, 1954
+  size: 828, 92
+  orig: 828, 92
+  offset: 0, 0
+  index: -1
+Objects/greenscreen92x92
+  rotate: false
+  xy: 2, 1602
+  size: 828, 92
+  orig: 828, 92
+  offset: 0, 0
+  index: -1
+Objects/justwell
+  rotate: false
+  xy: 832, 1418
+  size: 240, 310
+  orig: 240, 310
+  offset: 0, 0
+  index: -1
+Objects/redscreen92x92
+  rotate: false
+  xy: 1028, 1860
+  size: 828, 92
+  orig: 828, 92
+  offset: 0, 0
+  index: -1
+Objects/snowflake32x32
+  rotate: false
+  xy: 794, 62
+  size: 192, 32
+  orig: 192, 32
+  offset: 0, 0
+  index: -1
+Objects/sparkle
+  rotate: false
+  xy: 783, 96
+  size: 320, 32
+  orig: 320, 32
+  offset: 0, 0
+  index: -1
+Objects/star
+  rotate: false
+  xy: 794, 28
+  size: 192, 32
+  orig: 192, 32
+  offset: 0, 0
+  index: -1
+Objects/whitescreen92x92
+  rotate: false
+  xy: 2, 1508
+  size: 828, 92
+  orig: 828, 92
+  offset: 0, 0
+  index: -1
+Objects/yellowscreen92x92
+  rotate: false
+  xy: 2, 1414
+  size: 828, 92
+  orig: 828, 92
+  offset: 0, 0
+  index: -1
+Skin/CustomSkin/uiskin
+  rotate: false
+  xy: 2, 1790
+  size: 1024, 256
+  orig: 1024, 256
+  offset: 0, 0
+  index: -1
+Skin/uiskin
+  rotate: false
+  xy: 1454, 312
+  size: 256, 128
+  orig: 256, 128
+  offset: 0, 0
+  index: -1
+Startscreen/pressAnywhereToStart
+  rotate: false
+  xy: 794, 2
+  size: 179, 24
+  orig: 179, 24
+  offset: 0, 0
+  index: -1
+Startscreen/startBackground
+  rotate: false
+  xy: 970, 130
+  size: 240, 310
+  orig: 240, 310
+  offset: 0, 0
+  index: -1
+icon2.0
+  rotate: false
+  xy: 1454, 132
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+Startscreen/icon2.0
+  rotate: false
+  xy: 1454, 132
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+tausta
+  rotate: false
+  xy: 728, 130
+  size: 240, 640
+  orig: 240, 640
+  offset: 0, 0
+  index: -1
